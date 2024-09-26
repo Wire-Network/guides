@@ -1,9 +1,9 @@
 #pragma once
 
-#include <eosio/eosio.hpp>
+#include <sysio/sysio.hpp>
 #include <string>
 
-using namespace eosio;
+using namespace sysio;
 
 CONTRACT hello : public contract {
 public:

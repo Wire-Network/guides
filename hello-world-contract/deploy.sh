@@ -1,5 +1,5 @@
 #!/bin/bash
 
-cleos set contract hello ./hello -p hello@active
+clio set contract hello ./hello -p hello@active
 
 

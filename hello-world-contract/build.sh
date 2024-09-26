@@ -12,7 +12,7 @@ rm -rf "${PROJECT_DIR:?}"/*
 
 if [ -f "$SOURCE_FILE" ]; then
     # Compile the contract 
-    eosio-cpp -abigen -contract "hello" -o "$OUTPUT_FILE" "$SOURCE_FILE" -I "$INCLUDE_DIR"
+    cdt-cpp -abigen -contract "hello" -o "$OUTPUT_FILE" "$SOURCE_FILE" -I "$INCLUDE_DIR"
     
     if [ -f "$OUTPUT_FILE" ]; then
         echo "Compilation successful, WASM file created at $OUTPUT_FILE"
